@@ -1,4 +1,5 @@
 import { ArrowLeftOnRectangleIcon } from "@heroicons/react/24/solid";
+import { urlPaths } from "@/constants/routes";
 import NavLinks from "./NavLinks";
 import Link from "next/link";
 import Logo from "./Logo";
@@ -7,7 +8,7 @@ const Sidebar = () => {
   return (
     <aside className="flex h-full flex-col px-3 py-4 md:px-2">
       <Link
-        href="/store"
+        href={urlPaths.store}
         className="flex h-20 items-end justify-center md:justify-start rounded-md p-4 mb-4 bg-purple-700"
       >
         <div className="w-48 md:w-40">

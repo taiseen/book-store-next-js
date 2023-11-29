@@ -1,11 +1,13 @@
 import { CurrencyRupeeIcon } from "@heroicons/react/24/solid";
+import { urlPaths } from "@/constants/routes";
+import AddToCart from "../AddToCart";
 import BookStock from "./BookStock";
 import BookImg from "./BookImg";
 import Link from "next/link";
 
 const Book = ({ book }) => {
   return (
-    <Link href={`/store/${book.id}`}>
+    <Link href={`${urlPaths.store}/${book.id}`}>
       <div className="flex flex-col items-center justify-center bg-white rounded text-center p-4 shadow-sm">
         <div className="flex p-4">
           <h3 className="ml-2 text-sm font-medium">{book.title}</h3>
@@ -32,6 +34,8 @@ const Book = ({ book }) => {
                 : `Currently no one has rented this book`}
             </p>
           </div>
+
+          <AddToCart book={book} />
         </div>
       </div>
     </Link>
