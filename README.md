@@ -15,5 +15,4 @@ Learning Notes:
 
 But using `Context API` for information sharing between pages/components at global level
 
-
 ```

@@ -1,3 +1,4 @@
+import StoreProvider from "@/context/provider";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata = {
@@ -7,10 +8,14 @@ export const metadata = {
 
 export default function BookStoreLayout({ children }) {
   return (
-    <div className="flex flex-col sm:flex-col md:flex-row min-h-screen">
-      <Sidebar />
+    <StoreProvider>
+      <div className="flex flex-col sm:flex-col md:flex-row min-h-screen">
+        <Sidebar />
 
-      <div className="flex flex-wrap p-2 justify-center items-center grow gap-2">{children}</div>
-    </div>
+        <div className="flex flex-wrap p-2 justify-center items-center grow gap-2">
+          {children}
+        </div>
+      </div>
+    </StoreProvider>
   );
 }

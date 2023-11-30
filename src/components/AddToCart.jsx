@@ -1,13 +1,20 @@
 "use client";
 import { BookmarkIcon, ShoppingCartIcon } from "@heroicons/react/24/solid";
+import { useStoreContext } from "@/context/provider";
 import { toast } from "react-toastify";
 
 const AddToCart = ({ book }) => {
+  const { cartData, setCartData } = useStoreContext();
+
+  console.log(cartData);
+
   const handleAddToCart = (e, reason) => {
     e.preventDefault();
 
     const newBook = { ...book, type: reason };
-    
+
+    setCartData([...cartData, newBook]);
+
     toast.success(`Add ${book.title} to cart`, {
       autoClose: 2000,
       position: "top-right",
