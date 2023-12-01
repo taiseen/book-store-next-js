@@ -1,5 +1,5 @@
-import StoreProvider from "@/context/provider";
-import Sidebar from "@/components/Sidebar";
+import StoreProvider from "../../context/provider";
+import Sidebar from "../../components/Sidebar";
 
 export const metadata = {
   title: "Buy or Rent Books",

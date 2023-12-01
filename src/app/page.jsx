@@ -1,6 +1,6 @@
 import { SparklesIcon } from "@heroicons/react/24/solid";
-import { urlPaths } from "@/constants/routes";
-import HomeBgImg from "@/components/HomeBgImg";
+import { urlPaths } from "../constants/routes";
+import HomeBgImg from "../components/HomeBgImg";
 import Link from "next/link";
 
 export default function Home() {

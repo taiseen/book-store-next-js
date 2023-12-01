@@ -1,5 +1,5 @@
-import BookImg from "@/components/books/BookImg";
-import { getBookById } from "@/db/fakeData";
+import BookImg from "../../../components/books/BookImg";
+import { getBookById } from "../../../db/fakeData";
 
 const BookDetailsPage = ({ params: { id } }) => {
   const book = getBookById(id);

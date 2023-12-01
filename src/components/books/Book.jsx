@@ -1,5 +1,5 @@
 import { CurrencyRupeeIcon } from "@heroicons/react/24/solid";
-import { urlPaths } from "@/constants/routes";
+import { urlPaths } from "../../constants/routes";
 import AddToCart from "../cart/AddToCart";
 import BookStock from "./BookStock";
 import BookImg from "./BookImg";

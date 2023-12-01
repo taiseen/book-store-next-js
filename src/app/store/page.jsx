@@ -1,5 +1,5 @@
-import BookList from "@/components/books/BookList";
-import { getAllBooks } from "@/db/fakeData";
+import BookList from "../../components/books/BookList";
+import { getAllBooks } from "../../db/fakeData";
 
 const BookListPage = () => {
   const books = getAllBooks();

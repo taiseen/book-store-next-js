@@ -1,7 +1,7 @@
 "use client";
 import { BookmarkIcon, ShoppingCartIcon } from "@heroicons/react/24/solid";
-import { intention, toastOption } from "@/constants/data";
-import { useStoreContext } from "@/context/provider";
+import { intention, toastOption } from "../../constants/data";
+import { useStoreContext } from "../../context/provider";
 import { toast } from "react-toastify";
 
 const AddToCart = ({ book }) => {

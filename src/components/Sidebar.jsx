@@ -1,5 +1,5 @@
 import { ArrowLeftOnRectangleIcon } from "@heroicons/react/24/solid";
-import { urlPaths } from "@/constants/routes";
+import { urlPaths } from "../constants/routes";
 import NavLinks from "./NavLinks";
 import Link from "next/link";
 import Logo from "./Logo";

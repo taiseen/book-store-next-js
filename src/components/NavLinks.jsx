@@ -1,6 +1,6 @@
 "use client";
-import { useStoreContext } from "@/context/provider";
-import routes from "@/constants/routes";
+import { useStoreContext } from "../context/provider";
+import routes from "../constants/routes";
 import Link from "next/link";
 
 const NavLinks = () => {
