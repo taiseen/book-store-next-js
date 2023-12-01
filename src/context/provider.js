@@ -4,10 +4,10 @@ import StoreContext from ".";
 
 const StoreProvider = ({ children }) => {
 
-    const [cartData, setCartData] = useState([]);
+    const [bookCart, setBookCart] = useState([]);
 
     const globalData = {
-        cartData, setCartData,
+        bookCart, setBookCart,
     }
 
     return (

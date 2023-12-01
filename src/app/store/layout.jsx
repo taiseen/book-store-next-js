@@ -12,7 +12,7 @@ export default function BookStoreLayout({ children }) {
       <div className="flex flex-col sm:flex-col md:flex-row min-h-screen">
         <Sidebar />
 
-        <div className="flex flex-wrap p-2 justify-center items-center grow gap-2">
+        <div className="flex flex-wrap p-4 justify-center items-center grow gap-2">
           {children}
         </div>
       </div>
