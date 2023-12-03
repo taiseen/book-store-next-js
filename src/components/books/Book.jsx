@@ -10,7 +10,7 @@ const Book = ({ book }) => {
     <Link href={`${urlPaths.store}/${book.id}`}>
       <div className="flex flex-col items-center justify-center bg-white rounded text-center p-4 shadow-sm">
         <div className="flex p-4">
-          <h3 className="ml-2 text-sm font-medium">{book.title}</h3>
+          <h3 className="ml-2 text-lg font-medium">{book.title}</h3>
         </div>
 
         <BookImg img={book.cover} title={book.title} />

@@ -13,4 +13,5 @@ export type BookType = {
     sold: number;
     ISBN: string;
     type?: string;
+    quantity?: number;
 };

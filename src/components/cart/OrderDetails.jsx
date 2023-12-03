@@ -8,19 +8,40 @@ const OrderDetails = () => {
   const buyingBooks = bookCart.filter((book) => book.type === intention.buy);
   const rentingBooks = bookCart.filter((book) => book.type === intention.rent);
 
-  const buyPrice = buyingBooks.reduce((total, book) => total + book.sellPrice, 0);
-  const rentPrice = rentingBooks.reduce((total, book) => total + book.rentPrice, 0);
+  const totalBuyingBooks = buyingBooks.length;
+  const totalRentingBooks = rentingBooks.length;
 
+  const buyPrice = buyingBooks.reduce(
+    (total, book) => total + book.sellPrice,
+    0
+  );
+  const rentPrice = rentingBooks.reduce(
+    (total, book) => total + book.rentPrice,
+    0
+  );
 
- return (
-    <div className="w-full bg-white rounded px-8 pt-6 pb-8 mb-4">
+  const deliveryPrice = 5;
+  const totalAmount = buyPrice + rentPrice + deliveryPrice;
+
+  return (
+    <div className="bg-white rounded px-8 pt-6 pb-8 mb-4">
       <h2 className="text-2xl pb-4">OrderDetails</h2>
       {
         <ul>
-          <li>Buying {buyingBooks.length} books for {buyPrice} BDT</li>
-          <li>Renting {rentingBooks.length} books for {rentPrice} BDT</li>
+          {totalBuyingBooks > 0 && (
+            <li>
+              Buying {totalBuyingBooks} books for {buyPrice} BDT
+            </li>
+          )}
+
+          {totalRentingBooks > 0 && (
+            <li>
+              Renting {totalRentingBooks} books for {rentPrice} BDT
+            </li>
+          )}
         </ul>
       }
+      <p className="mt-2 font-bold">With Delivery total cost: {totalAmount} BDT</p>
     </div>
   );
 };

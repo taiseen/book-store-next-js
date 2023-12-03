@@ -1,6 +1,6 @@
 export const intention = {
     buy: 'Buy',
-    rent: 'rent',
+    rent: 'Rent',
 }
 
 export const toastOption = {

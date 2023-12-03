@@ -11,7 +11,7 @@ const AddToCart = ({ book }) => {
     e.preventDefault();
 
     // write operation - create new object with new [property:value]
-    const newBook = { ...book, type: reason };
+    const newBook = { ...book, type: reason, quantity: 1 };
 
     const isBuying = reason === intention.buy;
     const isRenting = reason === intention.rent;

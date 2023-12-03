@@ -1,4 +1,5 @@
 import OrderDetails from "../../../components/cart/OrderDetails";
+import ProductList from "../../../components/cart/ProductList";
 import Payment from "../../../components/cart/Payment";
 
 const CartPage = () => {
@@ -10,9 +11,13 @@ const CartPage = () => {
         Thanks for purchasing. Please Complete this checkout process
       </p>
 
-      <div className=" flex flex-wrap xs:flex-col">
-        <OrderDetails />
-        <Payment />
+      <div className="flex gap-2">
+        <ProductList />
+
+        <div className=" flex flex-wrap xs:flex-col justify-center">
+          <OrderDetails />
+          <Payment />
+        </div>
       </div>
     </div>
   );
