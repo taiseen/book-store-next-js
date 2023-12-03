@@ -14,5 +14,6 @@ Learning Notes:
 `Props` ==> is a way to talk between two or more components...
 
 But using `Context API` for information sharing between pages/components at global level
-
 ```
+
+
